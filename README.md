@@ -1,36 +1,110 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfolio Website
+
+A modern, responsive portfolio website built with Next.js and Tailwind CSS. This website showcases the profile, skills, projects, and contact information of an undergraduate software engineer.
+
+## Features
+
+- **Responsive Design**: Looks great on all devices - mobile, tablet, and desktop.
+- **Dark/Light Mode**: Toggle between dark and light themes.
+- **Modern UI**: Clean and professional interface with smooth animations.
+- **SEO Optimized**: Built with best practices for search engine optimization.
+- **Fast Performance**: Optimized for speed and performance.
+
+## Sections
+
+- **Hero**: A brief introduction with a profile picture.
+- **About**: Detailed information about the person, skills, and education.
+- **Projects**: Showcase of portfolio projects with filtering capabilities.
+- **Contact**: A contact form and social media links.
+
+## Technologies Used
+
+- **Next.js**: React framework for building the application.
+- **TypeScript**: For type safety and better developer experience.
+- **Tailwind CSS**: For styling and responsive design.
+- **Framer Motion**: For smooth animations and transitions.
+- **React Icons**: For including popular icon sets.
+- **Next-themes**: For dark/light mode toggle.
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Node.js (version 18.0.0 or higher)
+- npm or yarn
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Installation
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/portfolio-website.git
+   cd portfolio-website
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+2. Install dependencies:
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
 
-## Learn More
+3. Run the development server:
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+4. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Customization
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Personal Information
 
-## Deploy on Vercel
+Update your personal information in the respective component files:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Personal details: `src/components/sections/HeroSection.tsx`
+- About information: `src/components/sections/AboutSection.tsx`
+- Project details: `src/components/sections/ProjectsSection.tsx`
+- Contact information: `src/components/sections/ContactSection.tsx`
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Images
+
+Replace the placeholder images with your own:
+
+- Profile picture: `public/profile-placeholder.jpg`
+- Project images: `public/projects/project1.jpg`, etc.
+
+### Colors and Theme
+
+You can customize the colors and theme by modifying:
+
+- `tailwind.config.js`: For changing the color scheme
+- `src/app/globals.css`: For adjusting CSS variables
+
+## Deployment
+
+You can deploy this website to various platforms:
+
+- **Vercel** (recommended for Next.js projects):
+  ```bash
+  npm install -g vercel
+  vercel
+  ```
+
+- **Netlify**:
+  ```bash
+  npm install -g netlify-cli
+  netlify deploy
+  ```
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## Acknowledgements
+
+- [Next.js](https://nextjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Framer Motion](https://www.framer.com/motion/)
+- [React Icons](https://react-icons.github.io/react-icons/)
